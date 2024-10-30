@@ -13,7 +13,7 @@ export class TableauDashboardComponent implements OnInit {
   constructor(private tableauService: TableauService) {}
 
   ngOnInit() {
-    this.tableauService.getEmbedUrl('WORKBOOK_ID', 'VIEW_ID')
+    this.tableauService.getEmbedUrl('WorldIndicators', 'Tourism')
       .subscribe(embedUrl => {
         this.initTableauEmbed(embedUrl);
       });
